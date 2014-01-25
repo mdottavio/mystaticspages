@@ -16,11 +16,13 @@
     rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"
     rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.css">
   
     <style type="text/css">
       header, .unboxing, .specs { text-align: center; }
       .unboxing img { max-width: 33%; }
       .specs img { max-width: 100%; }
+      .photos img { max-width: 40%; }
       .container{ margin-bottom: 25px; }
     </style>
 </head>
@@ -108,20 +110,42 @@ Claro que no todo es color de rosa y después de unos meses terminé de pagarla 
       Si queres más detalles de las specs podes consultarlas <a href="http://support.apple.com/kb/SP649">Acá</a>
       </p>
       
+
+      <h2>Photos</h2>
+      <div class="specs photos">
+
+      <a href="https://i.cloudup.com/MxmdFykXAI-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/MxmdFykXAI-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/Wj27CD6OJi-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/Wj27CD6OJi-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/hv7bnYOOHD-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/hv7bnYOOHD-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/RVCaoIY1Xc-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/RVCaoIY1Xc-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/do6gcwqiuH-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/do6gcwqiuH-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/Bf4L1kgpyD-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/Bf4L1kgpyD-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/oqHuey9Xav-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/oqHuey9Xav-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/B0NtnyCWDB-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/B0NtnyCWDB-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/t1cNmBqSyj-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/t1cNmBqSyj-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/jD0Q4a2qHz-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/jD0Q4a2qHz-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/L06EGcYuCa-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/L06EGcYuCa-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/Wfzo81KBXv-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/Wfzo81KBXv-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/VvVeAMd5Vq-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/VvVeAMd5Vq-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/fIH9EfpEnu-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/fIH9EfpEnu-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/I7rcmFZ5rB-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/I7rcmFZ5rB-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/fHh9yUIDnz-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/fHh9yUIDnz-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/Baowy3P2Ux-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/Baowy3P2Ux-600x600.jpeg" /></a>
+      <a href="https://i.cloudup.com/hCPhv053wA-600x600.jpeg" data-toggle="lightbox"><img src="https://i.cloudup.com/hCPhv053wA-600x600.jpeg" /></a>
+
+
+      </div>
+
       <h2>Details</h2>
       <p>
       En el día a día la he usado con un teclado externo y un Magic Mouse, por lo que el Trackpad y el teclado tiene muy poco uso.
       Sin embargo tiene unos pequeños detalles en la parte de abajo (vamos, son ya año y varios meses).
       Además tiene dos pequeños golpes en las esquinas superiores del monitor, fruto de un golpe contra la mesa de trabajo mientras la guardaba para volver a casa.
-      </p>
-      <p class="specs">
-      [voy a subir unas Fotos para que veas este detalle]
-      </p>
-      <p>
+      <br/>
       Pese al eso, no se vio afectado su rendimiento (no se me colgó nunca), ni tampoco presenta errores de disco, memoria o video; la pantalla sigue intacta.
       </p>
       
-      <h4>In the box</h4>
+      <h2>In the box</h2>
       <p>
       Entonces, te levarías<br />
       <ul>
@@ -147,6 +171,18 @@ Claro que no todo es color de rosa y después de unos meses terminé de pagarla 
     </script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
     >
+    </script>
+    <script type="text/javascript" src="http://rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+
+        // delegate calls to data-toggle="lightbox"
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+          event.preventDefault();
+          return $(this).ekkoLightbox();
+        });
+
+      });
     </script>
   </body>
 
